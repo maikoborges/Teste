@@ -1,0 +1,17 @@
+vet = [67836.43, 36678.66, 29229.88, 27165.48, 19849.53]
+
+soma = 0
+for x in range(len(vet)):
+    soma += vet[x]
+
+SP = 67836.43 * 100 / soma
+RJ = 36678.66 * 100 / soma
+MG = 29229.88 * 100 / soma
+ES = 27165.48 * 100 / soma
+outros = 19849.53 * 100 / soma
+
+print(f'O estado de São Paulo teve um percentual de {SP:.2f}%')
+print(f'O estado do Rio de Janeiro teve um percentual de {RJ:.2f}%')
+print(f'O estado de Minas Gerais teve um percentual de {MG:.2f}%')
+print(f'O estado do Espirito Santo teve um percentual de {ES:.2f}%')
+print(f'O demais estados tiveram um percentual de {outros:.2f}%')

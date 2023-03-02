@@ -1,0 +1,3 @@
+frase = input('Digite uma frase: ')
+for x in range(len(frase), 0, -1):
+    print(frase[x-1], end='')

@@ -1,0 +1,23 @@
+fibonacci = []
+print('ANALISANDO O NÚMERO')
+
+while True:
+    try:
+        n = int(input('Digite um número: '))
+    except:
+        print('Erro! Digite um número válido')
+    else:
+        fib1 = 0
+        fib2 = 1
+        while fib1 < n:
+            fib1 = fib2 + fib1
+            fib2 = fib1 - fib2
+            fibonacci.append(fib1)
+
+        if n in fibonacci:
+            print('\33[32mEste número pertece a sequência de Fibonacci\33[m')
+        elif n == 0:
+            print('\33[32mEste número pertece a sequência de Fibonacci\33[m')
+        else:
+            print('\33[31mEste número não pertece a sequência de Fibonacci\33[m')
+        break
